@@ -1,0 +1,9 @@
+.logo-mark {
+    width: 32px;          /* size of your tiny logo */
+    height: 32px;         /* keeps square logo */
+    object-fit: contain;   /* keeps logo proportional */
+    margin-right: 8px;     /* space between logo and “WSU Sales Club” */
+    cursor: pointer;       /* makes it feel clickable */
+    vertical-align: middle; /* aligns nicely with the text */
+}
+
