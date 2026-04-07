@@ -27,7 +27,6 @@
     min-height: 100vh;
   }
 
-  /* ── NAV ── */
   nav {
     background: var(--crimson);
     position: sticky;
@@ -97,22 +96,16 @@
     cursor: pointer;
   }
 
-  .nav-links li a:hover {
-    color: var(--white);
-    background: rgba(255,255,255,0.08);
-  }
-
+  .nav-links li a:hover,
   .nav-links li a.active {
     color: var(--white);
     border-bottom: 3px solid var(--white);
     background: rgba(255,255,255,0.08);
   }
 
-  /* ── PAGES ── */
   .page { display: none; }
   .page.active { display: block; }
 
-  /* ── HERO ── */
   .hero {
     background: var(--crimson);
     color: var(--white);
@@ -160,18 +153,9 @@
     margin-bottom: 1.25rem;
   }
 
-  .hero h1 em {
-    font-style: normal;
-    color: var(--gray-light);
-  }
+  .hero h1 em { font-style: normal; color: var(--gray-light); }
 
-  .hero p {
-    font-family: 'Lora', serif;
-    font-size: 1.15rem;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.85);
-    max-width: 560px;
-  }
+  .hero p { font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.7; color: rgba(255,255,255,0.85); max-width: 560px; }
 
   .hero-cta {
     margin-top: 2rem;
@@ -186,21 +170,13 @@
     padding: 0.75rem 2rem;
     border-radius: 3px;
     cursor: pointer;
-    transition: background 0.15s, transform 0.1s;
     border: none;
+    transition: background 0.15s, transform 0.1s;
   }
 
-  .hero-cta:hover {
-    background: var(--gray-pale);
-    transform: translateY(-1px);
-  }
+  .hero-cta:hover { background: var(--gray-pale); transform: translateY(-1px); }
 
-  /* ── SECTION ── */
-  .section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
+  .section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
 
   .section-label {
     font-family: 'Barlow Condensed', sans-serif;
@@ -223,169 +199,11 @@
     line-height: 1.05;
   }
 
-  .divider {
-    width: 48px;
-    height: 3px;
-    background: var(--crimson);
-    margin-bottom: 2rem;
-  }
+  .divider { width: 48px; height: 3px; background: var(--crimson); margin-bottom: 2rem; }
 
-  /* ── ABOUT CARDS ── */
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2.5rem;
-  }
-
-  .card {
-    border: 1px solid var(--gray-light);
-    border-top: 4px solid var(--crimson);
-    padding: 1.75rem;
-    border-radius: 2px;
-    background: var(--white);
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-
-  .card:hover {
-    box-shadow: 0 8px 28px rgba(0,0,0,0.09);
-    transform: translateY(-2px);
-  }
-
-  .card-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--gray-pale);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .card h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.6rem;
-    color: var(--text);
-  }
-
-  .card p {
-    font-size: 0.95rem;
-    line-height: 1.65;
-    color: var(--text-muted);
-  }
-
-  /* ── TEAM ── */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2.5rem;
-  }
-
-  .team-card {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 2px;
-    transition: box-shadow 0.2s;
-  }
-
-  .team-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-
-  .avatar {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: var(--crimson);
-    color: var(--white);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 0.9rem;
-    letter-spacing: 0.04em;
-  }
-
-  .team-card h4 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 0.2rem;
-  }
-
-  .team-card .role {
-    font-size: 0.82rem;
-    color: var(--crimson);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  /* ── STRIPE BAND ── */
-  .band {
-    background: var(--gray-pale);
-    border-top: 1px solid var(--gray-light);
-    border-bottom: 1px solid var(--gray-light);
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-
-  .band p {
-    max-width: 620px;
-    margin: 0 auto;
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--text-muted);
-  }
-
-  .band strong { color: var(--crimson); font-style: italic; }
-
-  /* ── NEWSLETTER ── */
-  .newsletter-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
-  @media (max-width: 720px) {
-    .newsletter-layout { grid-template-columns: 1fr; gap: 2rem; }
-    .nav-logo span { display: none; }
-  }
-
-  .newsletter-info h2 { margin-bottom: 0 }
-
-  .perks { list-style: none; margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.9rem; }
-
-  .perks li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    font-size: 0.95rem;
-    line-height: 1.55;
-    color: var(--text-muted);
-  }
-
-  .perks li::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--crimson);
-    margin-top: 7px;
-    flex-shrink: 0;
-  }
+  /* Newsletter layout */
+  .newsletter-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  @media (max-width: 720px) { .newsletter-layout { grid-template-columns: 1fr; gap: 2rem; } }
 
   .form-card {
     background: var(--white);
@@ -395,169 +213,29 @@
     border-radius: 2px;
   }
 
-  .form-card h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.4rem;
-  }
+  .form-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+  .form-card .sub { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.75rem; }
 
-  .form-card .sub {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    margin-bottom: 1.75rem;
+  .form-group { margin-bottom: 1.1rem; }
+  label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.35rem; }
+  input[type="text"], input[type="email"], textarea, select {
+    width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--gray-light); border-radius: 2px;
+    font-family: 'Barlow', sans-serif; font-size: 0.95rem; color: var(--text); background: var(--white); transition: border-color 0.15s, box-shadow 0.15s; outline: none;
   }
-
-  .form-group {
-    margin-bottom: 1.1rem;
-  }
-
-  label {
-    display: block;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 0.35rem;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  select {
-    width: 100%;
-    padding: 0.7rem 0.85rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 2px;
-    font-family: 'Barlow', sans-serif;
-    font-size: 0.95rem;
-    color: var(--text);
-    background: var(--white);
-    transition: border-color 0.15s, box-shadow 0.15s;
-    outline: none;
-  }
-
-  input:focus, textarea:focus, select:focus {
-    border-color: var(--crimson);
-    box-shadow: 0 0 0 3px rgba(152,30,50,0.1);
-  }
-
+  input:focus, textarea:focus, select:focus { border-color: var(--crimson); box-shadow: 0 0 0 3px rgba(152,30,50,0.1); }
   textarea { resize: vertical; min-height: 120px; }
 
   .btn-primary {
-    width: 100%;
-    padding: 0.85rem;
-    background: var(--crimson);
-    color: var(--white);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.15s, transform 0.1s;
+    width: 100%; padding: 0.85rem; background: var(--crimson); color: var(--white);
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.12em;
+    text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; margin-top: 0.5rem; transition: background 0.15s, transform 0.1s;
   }
+  .btn-primary:hover { background: var(--crimson-dark); transform: translateY(-1px); }
+  .form-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; text-align: center; line-height: 1.5; }
 
-  .btn-primary:hover {
-    background: var(--crimson-dark);
-    transform: translateY(-1px);
-  }
-
-  .btn-primary:active { transform: translateY(0); }
-
-  .form-note {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    margin-top: 0.75rem;
-    text-align: center;
-    line-height: 1.5;
-  }
-
-  /* ── CONTACT ── */
-  .contact-layout {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
-  @media (max-width: 720px) {
-    .contact-layout { grid-template-columns: 1fr; gap: 2rem; }
-  }
-
-  .contact-info h2 { margin-bottom: 0; }
-
-  .contact-details {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-  }
-
-  .contact-item {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .contact-icon {
-    width: 38px;
-    height: 38px;
-    background: var(--crimson);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.95rem;
-    flex-shrink: 0;
-  }
-
-  .contact-item-text strong {
-    display: block;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 0.1rem;
-  }
-
-  .contact-item-text span {
-    font-size: 0.95rem;
-    color: var(--text);
-  }
-
-  /* ── SUCCESS MSG ── */
-  .success-msg {
-    display: none;
-    background: #f0faf4;
-    border: 1px solid #a8d5b5;
-    border-left: 4px solid #2e7d50;
-    padding: 1rem 1.25rem;
-    border-radius: 2px;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #1e5c38;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--text);
-    color: rgba(255,255,255,0.5);
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.82rem;
-    letter-spacing: 0.04em;
-  }
-
+  footer { background: var(--text); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.82rem; letter-spacing: 0.04em; }
   footer strong { color: rgba(255,255,255,0.8); }
+
 </style>
 </head>
 <body>
@@ -569,16 +247,15 @@
       <span>WSU Sales Club</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#" class="active" onclick="showPage('about'); return false;" id="nav-about">About Us</a></li>
-      <li><a href="#" onclick="showPage('newsletter'); return false;" id="nav-newsletter">Newsletter</a></li>
-      <li><a href="#" onclick="showPage('contact'); return false;" id="nav-contact">Contact</a></li>
+      <li><a href="#" class="active" onclick="showPage('about'); return false;">About Us</a></li>
+      <li><a href="#" onclick="showPage('newsletter'); return false;">Newsletter</a></li>
+      <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ══════════════════ ABOUT PAGE ══════════════════ -->
+<!-- ABOUT PAGE -->
 <div id="page-about" class="page active">
-
   <div class="hero">
     <div class="hero-inner">
       <p class="hero-tag">Washington State University · Pullman, WA</p>
@@ -587,102 +264,10 @@
       <button class="hero-cta" onclick="showPage('newsletter')">Join Our Newsletter</button>
     </div>
   </div>
-
-  <div class="section">
-    <p class="section-label">What We Do</p>
-    <h2>Compete. Connect.<br>Grow.</h2>
-    <div class="divider"></div>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">🏆</div>
-        <h3>Sales Competitions</h3>
-        <p>We send teams to regional and national collegiate sales competitions, giving members real-world experience in role-play selling scenarios with industry judges.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🤝</div>
-        <h3>Industry Mentorship</h3>
-        <p>Connect one-on-one with sales leaders from top companies. Get career advice, referrals, and insight into what it really takes to excel in a sales career.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📚</div>
-        <h3>Skill Workshops</h3>
-        <p>Weekly meetings feature workshops on negotiation, cold outreach, CRM tools, and presentation skills — practical training you can use immediately.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">💼</div>
-        <h3>Recruiting Pipeline</h3>
-        <p>Our alumni and corporate partners actively recruit from our club. Members get early access to internships and full-time roles at leading sales organizations.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="band">
-    <p>"Sales is the lifeblood of every company. At WSU Sales Club, we make sure <strong>Cougar graduates are ready to lead from day one.</strong>"</p>
-  </div>
-
-<div class="section">
-  <p class="section-label">Leadership</p>
-  <h2>Meet the Team</h2>
-  <div class="divider"></div>
-
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="avatar">CR</div>
-      <h4>Caden Richard</h4>
-      <p class="role">President</p>
-    </div>
-
-    <div class="team-card">
-      <div class="avatar">AR</div>
-      <h4>Amanda Roskelley</h4>
-      <p class="role">Vice President</p>
-    </div>
-
-    <div class="team-card">
-      <div class="avatar">RM</div>
-      <h4>Ryan Mitchell</h4>
-      <p class="role">Treasurer</p>
-    </div>
-
-    <div class="team-card">
-      <div class="avatar">DH</div>
-      <h4>Dylan Handler</h4>
-      <p class="role">Corporate Communications</p>
-    </div>
-
-    <div class="team-card">
-      <div class="avatar">MS</div>
-      <h4>Mattie Smith</h4>
-      <p class="role">Social Media Manager</p>
-    </div>
-
-     <div class="team-card">
-      <div class="avatar">SY</div>
-      <h4>Srosh Younosi</h4>
-      <p class="role">Jr. Corporate Communications</p>
-    </div>
-
-     <div class="team-card">
-      <div class="avatar">AA</div>
-      <h4>Ashleigh Alcala</h4>
-      <p class="role">Recruiting</p>
-    </div>
-
-     <div class="team-card">
-      <div class="avatar">HA</div>
-      <h4>Hannah Anderson</h4>
-      <p class="role">Jr. Treasurer</p>
-    </div>
-    
-  </div>
 </div>
 
-</div>
-
-<!-- ══════════════════ NEWSLETTER PAGE ══════════════════ -->
+<!-- NEWSLETTER PAGE -->
 <div id="page-newsletter" class="page">
-
   <div class="hero" style="padding: 3.5rem 2rem;">
     <div class="hero-inner">
       <p class="hero-tag">Stay In The Loop</p>
@@ -693,198 +278,58 @@
 
   <div class="section">
     <div class="newsletter-layout">
-
-      <div class="newsletter-info">
-        <p class="section-label">Why Subscribe</p>
-        <h2>What's Inside Every Issue</h2>
-        <div class="divider"></div>
-        <ul class="perks">
-          <li>Upcoming meeting dates, guest speakers, and club events</li>
-          <li>Competition recaps and team highlights</li>
-          <li>Internship and job postings from our corporate partners</li>
-          <li>Sales tips, book recommendations, and industry reads</li>
-          <li>Alumni spotlights and career updates from fellow Cougars</li>
-          <li>Early invites to networking mixers and recruiting nights</li>
-        </ul>
+      <!-- Google Form -->
+      <div class="form-card">
+        <h3>Sign Up via Google Form</h3>
+        <p class="sub">Quick and easy sign up!</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgMX7gVUbOl2f66ppWqTm1G3G1R3AhLWm9t8UjRsVDDc9D0A/viewform?embedded=true" width="100%" height="700" frameborder="0">Loading…</iframe>
+        <p class="form-note">Powered by Google Forms.</p>
       </div>
 
-      <div>
-        <div class="form-card">
-          <h3>Sign Up Here</h3>
-          <p class="sub">Receive Meeting Emails.</p>
-
-  <!-- Google Form Embed -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgMX7gVUbOl2f66ppWqTm1G3G1R3AhLWm9t8UjRsVDDc9D0A/viewform?embedded=true" width="640" height="673" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>            
-              <p class="form-note">Powered by Google Forms.</p>
-            </div>
-              <label for="nl-fname">First Name</label>
-              <input type="text" id="nl-fname" name="FNAME" placeholder="Alex" required>
-            </div>
-            <div class="form-group">
-              <label for="nl-lname">Last Name</label>
-              <input type="text" id="nl-lname" name="LNAME" placeholder="Johnson" required>
-            </div>
-            <div class="form-group">
-              <label for="nl-email">WSU Email</label>
-              <input type="email" id="nl-email" name="EMAIL" placeholder="you@wsu.edu" required>
-            </div>
-            <div class="form-group">
-              <label for="nl-year">Year</label>
-              <select id="nl-year" name="YEAR">
-                <option value="">Select your year</option>
-                <option>Freshman</option>
-                <option>Sophomore</option>
-                <option>Junior</option>
-                <option>Senior</option>
-                <option>Graduate Student</option>
-              </select>
-            </div>
-            <button type="submit" class="btn-primary">Subscribe to Newsletter →</button>
-            <p class="form-note">Powered by Mailchimp. Replace the form action URL with your Mailchimp embed link.</p>
-          </form>
-
-          <div class="success-msg" id="nl-success">
-            ✓ You're on the list! Check your inbox for a confirmation email.
+      <!-- Custom Input Fields -->
+      <div class="form-card">
+        <h3>Sign Up Manually</h3>
+        <p class="sub">Receive Meeting Emails.</p>
+        <form id="manual-newsletter">
+          <div class="form-group">
+            <label for="nl-fname">First Name</label>
+            <input type="text" id="nl-fname" name="FNAME" placeholder="Alex" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="nl-lname">Last Name</label>
+            <input type="text" id="nl-lname" name="LNAME" placeholder="Johnson" required>
+          </div>
+          <div class="form-group">
+            <label for="nl-email">WSU Email</label>
+            <input type="email" id="nl-email" name="EMAIL" placeholder="you@wsu.edu" required>
+          </div>
+          <div class="form-group">
+            <label for="nl-year">Year</label>
+            <select id="nl-year" name="YEAR" required>
+              <option value="">Select your year</option>
+              <option>Freshman</option>
+              <option>Sophomore</option>
+              <option>Junior</option>
+              <option>Senior</option>
+              <option>Graduate Student</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Subscribe to Newsletter →</button>
+          <p class="form-note">Powered by Mailchimp. Replace the form action URL with your Mailchimp embed link.</p>
+        </form>
       </div>
-
     </div>
   </div>
-
 </div>
-
-<!-- ══════════════════ CONTACT PAGE ══════════════════ -->
-<div id="page-contact" class="page">
-
-  <div class="hero" style="padding: 3.5rem 2rem;">
-    <div class="hero-inner">
-      <p class="hero-tag">Get In Touch</p>
-      <h1>We'd Love to<br><em>Hear From You</em></h1>
-      <p>Questions about membership, partnerships, speaking opportunities, or anything else — reach out and a club officer will get back to you within 48 hours.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="contact-layout">
-
-      <div class="contact-info">
-        <p class="section-label">Reach Us</p>
-        <h2>Contact Info</h2>
-        <div class="divider"></div>
-
-        <div class="contact-details">
-          <div class="contact-item">
-            <div class="contact-icon">✉</div>
-            <div class="contact-item-text">
-              <strong>Email</strong>
-              <span>salesclub@wsu.edu</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div class="contact-item-text">
-              <strong>Location</strong>
-              <span>Todd Hall, WSU Pullman Campus</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📅</div>
-            <div class="contact-item-text">
-              <strong>Meetings</strong>
-              <span>Wednesdays, 6:00 PM — Todd 120</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🔗</div>
-            <div class="contact-item-text">
-              <strong>Instagram</strong>
-              <span>@wsusalesclub</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">💼</div>
-            <div class="contact-item-text">
-              <strong>LinkedIn</strong>
-              <span>WSU Sales Club</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="form-card">
-          <h3>Send a Message</h3>
-          <p class="sub">We'll get back to you within 48 hours.</p>
-
-          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleContactSubmit(event)">
-            <div class="form-group">
-              <label for="c-name">Full Name</label>
-              <input type="text" id="c-name" name="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-              <label for="c-email">Email Address</label>
-              <input type="email" id="c-email" name="email" placeholder="you@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="c-subject">Subject</label>
-              <select id="c-subject" name="subject">
-                <option value="">What's this about?</option>
-                <option>General Question</option>
-                <option>Membership / Joining</option>
-                <option>Corporate Partnership</option>
-                <option>Speaking Opportunity</option>
-                <option>Competition Info</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="c-msg">Message</label>
-              <textarea id="c-msg" name="message" placeholder="Tell us what's on your mind..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Send Message →</button>
-            <p class="form-note">Powered by Formspree. Replace the form action URL with your Formspree endpoint.</p>
-          </form>
-
-          <div class="success-msg" id="contact-success">
-            ✓ Message sent! We'll be in touch within 48 hours.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-<!-- ══════════════════ FOOTER ══════════════════ -->
-<footer>
-  <p><strong>WSU Sales Club</strong> · Washington State University · Pullman, WA</p>
-  <p style="margin-top:0.4rem">Go Cougs! 🐾</p>
-</footer>
 
 <script>
-  function showPage(name) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    document.getElementById('page-' + name).classList.add('active');
-    document.getElementById('nav-' + name).classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + pageId).classList.add('active');
 
-  function handleNewsletterSubmit(e) {
-    e.preventDefault();
-    document.getElementById('newsletter-form').style.display = 'none';
-    document.getElementById('nl-success').style.display = 'block';
-    // To connect Mailchimp: remove e.preventDefault() and set the form action to your Mailchimp URL
-  }
-
-  function handleContactSubmit(e) {
-    e.preventDefault();
-    document.getElementById('contact-form').style.display = 'none';
-    document.getElementById('contact-success').style.display = 'block';
-    // To connect Formspree: remove e.preventDefault() and set the form action to your Formspree endpoint
-  }
+  document.querySelectorAll('.nav-links li a').forEach(a => a.classList.remove('active'));
+  document.querySelector('#nav-' + pageId)?.classList.add('active');
+}
 </script>
 
 </body>
